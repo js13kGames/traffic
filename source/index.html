@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="user-scalable=no">
+<title>Traffic</title>
+
+<style type="text/css">
+html, body, div, a, canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html {
+	height: 100%;
+	overflow: hidden
+}
+body {
+	position: relative;
+	height: 100%;
+	background: #777;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none
+}
+body.day { background: #777 }
+body.night { background: #222 }
+#screen {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 1008px;
+	height: 648px
+}
+#twitter { display: none }
+</style>
+
+</head>
+
+<body>
+
+<div id="fs">
+	<canvas id="screen" width="1008" height="648" class="hide" moz-opaque></canvas>
+</div>
+
+<a href="" id="twitter" target="twitter"></a>
+
+<script src="traffic.js"></script>
+
+</body>
+
+</html>
